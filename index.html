@@ -4,107 +4,184 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kavitha Medida | Full Stack Web Developer</title>
+  <meta name="description" content="Portfolio of Kavitha Medida, an aspiring Full Stack Web Developer with experience in HTML, CSS, JavaScript, Python, and SQL.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">Kavitha Medida</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="page-glow" aria-hidden="true"></div>
+  <div class="top-tag">
+    <p class="tag-brand">Kavitha Portfolio</p>
+    <p class="tag-pill">Full Stack Web Developer</p>
+  </div>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">Full Stack Web Developer</span>
-        <h1>Hi, I'm Kavitha Medida</h1>
-        <p>I build responsive and user-friendly web applications with a strong focus on frontend development. I work with HTML, CSS, JavaScript, and also have backend skills in Python and SQL. I use GitHub for version control and collaboration, and I am passionate about creating clean, modern UI and seamless user experiences..</p>
-        <div class="hero-actions">
-          <a href="#projects" class="button primary">View Projects</a>
-          <a href="#contact" class="button secondary">Contact Me</a>
+  <div class="site-wrap">
+    <header class="topbar" id="home">
+      <div class="logo">Kavitha Medida</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+        <a href="#contact" class="contact-pill">Contact</a>
+    </header>
+
+    <main>
+      <section class="hero" data-animate>
+        <div class="hero-copy">
+          <p class="eyebrow">Full Stack Developer</p>
+          <h1>Full Stack Web Developer</h1>
+          <p class="hero-text">I am Kavitha Medida, a Full Stack Web Developer with hands-on experience in HTML, CSS, JavaScript, Python, and SQL. I build responsive and user-friendly web applications.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-image">
-        <div class="photo-frame">
-          <img src="imag/kaavi.2 photo.jpeg"alt="Kavitha Medida" class="hero-photo" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
-          <div class="photo-placeholder">Your Photo</div>
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-border"></div>
+          <img src="imag/kaavi.2 photo.jpeg" alt="Kavitha Medida" class="hero-photo" onload="this.classList.add('loaded')" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-fallback">Kavitha Medida</div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="section about">
-      <div class="section-header">
-        <span>About Kavitha</span>
-      </div>
-      <p>I am a motivated Full Stack Web Developer with strong frontend skills in HTML, CSS, and JavaScript, along with backend knowledge in Python and SQL. I have completed training in Full Stack Web Development and have hands-on experience building responsive, clean, and user-friendly web applications.
-
-I have developed projects such as SportsSphere, a platform for sports players to showcase their skills, and Box-Bite, a home-style food service web application. Through these projects, I gained practical experience in designing intuitive interfaces and implementing efficient functionality.
-
-I use GitHub for version control and collaboration, ensuring organized and efficient development workflows. I am passionate about creating modern UI designs, continuously learning new technologies, and delivering high-quality work both independently and as part of a team.</p>
-
-    </section>
-
-    <section id="skills" class="section skills">
-      <div class="section-header">
-        <span>What I Do</span>
-        <h2>Key Skills</h2>
-      </div>
-      <div class="skill-grid">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Responsive Design</div>
-        <div class="skill-card">Python </div>
-        <div class="skill-card">SQL</div>
-        <div class="skill-card">GitHub Collaboration</div>
-      </div>
-    </section>
-
-    <section id="projects" class="section projects">
-      <div class="section-header">
-        <span>My Work</span>
-        <h2>Projects</h2>
-      </div>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>SportsSphere</h3>
-          <p>Developed a fully responsive web platform that enables sports players to showcase their skills, create detailed profiles, and connect with teams and opportunities. Implemented a clean, intuitive user interface with a strong focus on user experience, accessibility, and performance. Designed the application to ensure smooth navigation and an engaging interaction for users across devices.</p>
-          <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+      <section class="trusted-strip" data-animate>
+        <p>SKILLS</p>
+        <div class="trusted-items">
+          <span>Frontend Development</span>
+          <span>Backend Development</span>
+          <span>Responsive Design</span>
+          <span>GitHub Collaboration</span>
+          <span>Problem Solving</span>
         </div>
-        <div class="project-card">
-          <h3>Box-Bite</h3>
-          <p>Designed and developed a responsive frontend web application for home-style food services, enabling users to browse menus and explore food options seamlessly. Focused on building a clean, modern, and mobile-friendly user interface with smooth navigation and an intuitive user experience.</p>
-          <p><strong>Tech:</strong> HTML, CSS, JavaScript, Python</p>
+      </section>
+
+      <section id="services" class="section" data-animate>
+        <h2>What <span>I Do</span></h2>
+        <p class="section-intro">I work on frontend development, backend development, and full stack web development.</p>
+        <div class="card-grid services-grid">
+          <article class="info-card">
+            <h3>Frontend Development</h3>
+            <p>Building responsive website interfaces using HTML, CSS, Bootstrap, and JavaScript.</p>
+          </article>
+          <article class="info-card">
+            <h3>Backend Development</h3>
+            <p>Working with Python and SQL to support application functionality and data handling.</p>
+          </article>
+          <article class="info-card">
+            <h3>Full Stack Development</h3>
+            <p>Combining frontend and backend skills to build complete web applications.</p>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="section contact">
-      <div class="section-header">
-        <span>Get In Touch</span>
-        <h2>Contact Me</h2>
-      </div>
-      <div class="contact-details">
-        <p><strong>Email:</strong> kavithamedida4@gmail.com</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kavitha-medida/">linkedin.com/in/kavitha</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/kavitha">github.com/kavitha</a></p>
-      </div>
-    </section>
-  </main>
+      <section id="about" class="section" data-animate>
+        <h2>About <span>Me</span></h2>
+        <p class="section-intro">Full Stack Web Developer from Hyderabad. Quick learner with problem-solving, teamwork, and time management skills.</p>
+        <div class="card-grid stats-grid">
+          <article class="info-card stat-card"><strong>4+</strong><span>Projects Completed</span></article>
+          <article class="info-card stat-card"><strong>8+</strong><span>Certifications</span></article>
+          <article class="info-card stat-card"><strong>5+</strong><span>Core Technologies</span></article>
+          <article class="info-card stat-card"><strong>2025-Present</strong><span>Full Stack Training</span></article>
+        </div>
+      </section>
 
-  <footer>
-    <div class="footer-content">
+      <section class="section" data-animate>
+        <h2>Internship <span>/ Training</span></h2>
+        <div class="card-grid services-grid">
+          <article class="info-card">
+            <h3>Academy For Careers In Technology - Freshworks</h3>
+            <p><strong>Duration:</strong> Aug 2025 - Present</p>
+            <p>Hands-on training in frontend, backend, and full stack development with regular practical exercises and project-based learning.</p>
+          </article>
+          <article class="info-card">
+            <h3>Accenture (via Forage) - Technology Consulting Job Simulation</h3>
+            <p><strong>Duration:</strong> Apr 2026 - May 2026</p>
+            <p>Completed a job simulation based on real consulting workflows in the software development lifecycle.</p>
+            <p>Worked on requirement analysis, planned a voting app solution structure, and prepared Agile user stories to organize backlog tasks clearly.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section" data-animate>
+        <h2>Projects <span>Showcase</span></h2>
+        <p class="section-intro">Projects completed during training and practical work.</p>
+        <div class="card-grid project-grid">
+          <article class="project-card">
+            <h3>SportsSphere</h3>
+            <p>A sports platform where players create profiles and highlight their skills and achievements. The development process followed structured Agile-style task planning.</p>
+            <div class="chip-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>SQL</span></div>
+            <a href="https://tejbhuvana-hue.github.io/SportsSphere/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </article>
+          <article class="project-card">
+            <h3>Box-Bite</h3>
+            <p>Home-style food service platform where users can explore, select, and customize food preferences.</p>
+            <div class="chip-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="project-card">
+            <h3>Movie Hub Landing Page</h3>
+            <p>Responsive movie landing page built using HTML, CSS, and JavaScript with modern dark-themed design.</p>
+            <div class="chip-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://kavithamedida4-web.github.io/AI-Project-Landing-Page/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </article>
+          <article class="project-card">
+            <h3>Chess Game</h3>
+            <p>Chess game project with improvements in chess logic, minimax AI, and user interface interactions.</p>
+            <div class="chip-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://kavithamedida4-web.github.io/AI-game-project/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" data-animate>
+        <h2>Contact <span>Details</span></h2>
+        <div class="contact-grid">
+          <p><strong>Email:</strong> <a href="mailto:kavithamedida4@gmail.com">kavithamedida4@gmail.com</a></p>
+          <p><strong>Phone:</strong> +91 83412 82187</p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kavitha-medida/" target="_blank" rel="noopener noreferrer">linkedin.com/in/kavitha-medida</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/kavitha" target="_blank" rel="noopener noreferrer">github.com/kavitha</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
       <p>&copy; 2026 Kavitha Medida. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/kavitha-medida/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/kavitha" target="_blank">GitHub</a>
-        <a href="mailto:kavithamedida4@gmail.com">Email</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll("[data-animate]").forEach(el => observer.observe(el));
+
+      const interactiveCards = document.querySelectorAll(".info-card, .project-card");
+      interactiveCards.forEach(card => {
+        card.addEventListener("mousemove", (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width;
+          const y = (e.clientY - rect.top) / rect.height;
+          const rotateX = (0.5 - y) * 6;
+          const rotateY = (x - 0.5) * 6;
+          card.style.transform = `perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+        });
+
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "";
+        });
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
